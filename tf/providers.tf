@@ -1,12 +1,8 @@
-# Configure the OpenStack Provider
 provider "openstack" {
-    cloud = "kvm"
+    alias = "uc"
+    cloud = "uc"
 }
-# provider "openstack" {
-#     alias = "uc"
-#     cloud = "uc"
-# }
-# provider "openstack" {
-#     alias = "tacc"
-#     cloud = "tacc"
-# }
+provider "openstack" {
+    alias = "tacc"
+    cloud = "tacc"
+}
